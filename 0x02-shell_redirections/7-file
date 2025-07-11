@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Best School" > "*\\'\\\"Best School\\\"\\'*\\\$\\?\\*\\*\\*\\*\\*:)"
+touch $'\x2a\x5c\x27"Best School"\x27\x5c\x2a\x24\x3f\x2a\x2a\x2a\x2a\x2a:'
