@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# A Bash script that lists all running processes with hierarchy and user-friendly format
+# Lists all running processes in a hierarchical and user-friendly format
 
-ps -eo user,started,comm
+ps axo user,comm
