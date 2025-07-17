@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# A Bash script that filters and shows only lines with the word "bash"
+# shellcheck disable=SC2009
+
+ps -aux | grep '[b]ash'
