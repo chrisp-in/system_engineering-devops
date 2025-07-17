@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# This script lists non-hidden files in the current directory and displays only the part after the first dash
+
+for file in *; do
+  # Skip if it's a directory (optional, remove if you want to include dirs)
+  [ -f "$file" ] || continue
+  
+  # Extract everything after the first dash
+  echo "${file#*-}"
+done
+
