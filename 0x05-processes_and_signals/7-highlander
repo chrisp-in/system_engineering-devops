@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
+# This script runs an infinite loop that prints a message and handles SIGTERM by printing "I am invincible!!!"
 
-# Function that runs when SIGTERM is received
+# Handle SIGTERM signal
 trap 'echo "I am invincible!!!"' SIGTERM
 
 # Infinite loop

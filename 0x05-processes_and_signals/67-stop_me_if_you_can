@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
+# This script finds and sends a SIGTERM signal to the 7-highlander process
 
+# Get the PID of 7-highlander and send SIGTERM
 pid=$(pgrep -f 7-highlander)
 if [ -n "$pid" ]; then
   builtin kill "$pid"
